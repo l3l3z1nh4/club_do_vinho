@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club do Vinho</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="navbar navbar-expand-lg">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#adega">adega</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#sobre">sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">blog</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="btn" id="btn-login">login</button>
+        </header>
+
+        <h1 id="logo">Club do Vinho</h1>
+        <div data-bs-spy="scroll" data-bs-target="header">
+            <section id="adega">
+                <div id="produtos">
+                    <div id="btns-produtos">
+                        <h4>Produtos</h4>
+                        <button class="btn" id="btn-todos">Todos</button>
+                        <button class="btn" id="btn-promocao">Promoção</button>
+                        <button class="btn" id="btn-favoritos">Favoritos</button>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-xs-12" id="col-card-em-alta" >
+                            <div class="card card-prod">
+                                <div class="card-body">
+                                    <div class="carousel carousel-fade slide" id="carousel-prod-1" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-bs-interval="4000">
+                                                <img src="/img/vinho_2.webp" alt="">
+                                            </div>
+                                            <div class="carousel-item " data-bs-interval="4000">
+                                                <img src="/img/vinho_1.webp" alt="">
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="4000">
+                                                <img src="/img/vinho_3.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <button data-bs-target="#carousel-prod-1" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                            <span class="carousel-control-prev-icon" ></span>
+                                        </button>
+                                        <button data-bs-target="#carousel-prod-1" data-bs-slide="next" class="carousel-control-next" type="button">
+                                            <span class="carousel-control-next-icon" ></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <h5>Em alta</h5>
+                                    <a href="#" class="btn">veja mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" id="col-card-fav">
+                            <div class="card card-prod">
+                                <div class="card-body">
+                                    <div class="carousel carousel-fade slide" id="carousel-prod-2" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-bs-interval="4000">
+                                                <img src="/img/vinho_1.webp" alt="">
+                                            </div>
+                                            <div class="carousel-item " data-bs-interval="4000">
+                                                <img src="/img/vinho_6.webp" alt="">
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="4000">
+                                                <img src="/img/vinho_4.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <button data-bs-target="#carousel-prod-2" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                            <span class="carousel-control-prev-icon" ></span>
+                                        </button>
+                                        <button data-bs-target="#carousel-prod-2" data-bs-slide="next" class="carousel-control-next" type="button">
+                                            <span class="carousel-control-next-icon" ></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <h5>Seus Favoritos</h5>
+                                    <a href="#" class="btn">veja mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4" id="col-card-promo">
+                            <div class="card card-prod">
+                                <div class="card-body">
+                                    <div class="carousel carousel-fade slide" id="carousel-prod-3" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-bs-interval="4000">
+                                                <img src="/img/vinho_5.webp" alt="">
+                                            </div>
+                                            <div class="carousel-item " data-bs-interval="4000">
+                                                <img src="/img/vinho_3.webp" alt="">
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="4000">
+                                                <img src="/img/vinho_1.webp" alt="">
+                                            </div>
+                                        </div>
+                                        <button data-bs-target="#carousel-prod-3" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                            <span class="carousel-control-prev-icon" ></span>
+                                        </button>
+                                        <button data-bs-target="#carousel-prod-3" data-bs-slide="next" class="carousel-control-next" type="button">
+                                            <span class="carousel-control-next-icon" ></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <h5>Promoção</h5>
+                                    <a href="#" class="btn">veja mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </div>
+    
+    <section id="sobre">
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#sobre-o-club" id="accordion-sobre-header">
+                        <h4>O que é o club do vinho?</h4>
+                    </button>
+                </div>
+                <div id="sobre-o-club" class="accordion-collapse collapse">
+                    <div class="accordion-body" id="accordion-sobre-body">
+                        <div class="container">
+                            <p>.｡.:*✧Bem-vindo ao Clube do Vinho ✧*:.｡. <p>Seu espaço para explorar, apreciar e se apaixonar pelo universo do vinho. No nosso clube, você encontrará uma cuidadosa seleção de vinhos de todo o mundo, desde rótulos icônicos até descobertas raras, garantindo algo especial para todos os paladares e ocasiões. Facilitamos sua jornada vinícola com uma plataforma intuitiva que torna a compra de vinhos um prazer, além de oferecer ferramentas como a criação de wishlists personalizadas para que você possa planejar suas futuras aquisições ou presentear alguém especial.</p></p>
+                            <p>Nosso espaço vai além da simples compra de vinhos. Aqui, você pode se conectar com amigos, descobrir quais vinhos são os favoritos deles e compartilhar suas próprias recomendações, promovendo uma comunidade vibrante de amantes do vinho. Além disso, nossa seção de notícias mantém você atualizado com as últimas tendências, eventos e informações do mundo dos vinhos, garantindo que você esteja sempre bem informado e envolvido com o que há de mais novo no universo vinícola.</p>
+                            <p>Nossa missão é tornar o mundo dos vinhos mais acessível e enriquecedor para todos.</p>
+                            <p>Junte-se a nós para um brinde! 🍷</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>    
+    </div>
+    <section id="blog">
+        <div class="container">
+            <h4>Blog</h4>
+                    <div class="row">
+                        <div class="col-lg-6 col-ms-12">
+                            <div class="card" >
+                                    <img src="/img/noticia_3.webp" alt="">
+                                    <div class="card-img-overlay" >
+                                        <div id="texto-card-blog">
+                                            <h4 class="card-title">Como escolher um bom vinho?</h4>
+                                            <p class="card-text">Diversas ocasiões são propícias para incluir um bom vinho, desde um almoço ou jantar familiar ou entre amigos, até mesmo em uma comemoração a dois, para dar um toque a mais de romance […] </p>
+                                            <a href="#" class="btn">veja mais</a>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-ms-12">
+                            <div class="card" >
+                                <img src="/img/noticia_4.webp" alt="">
+                                <div class="card-img-overlay" >
+                                    <div id="texto-card-blog">
+                                        <h4 class="card-title">Enoturismo: a viagem ideal para quem gosta de vinhos
+                                        </h4>
+                                        <p class="card-text">Seja para conhecer novas pessoas, culturas ou desenvolver um novo idioma, viajar é sempre gratificante. Mas as viagens não se limitam apenas a isso […]  </p>
+                                        <a href="#" class="btn">veja mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="col-lg-6 col-ms-12">
+                            <div class="card" >
+                                <img src="/img/noticia_1.webp" alt="">
+                                <div class="card-img-overlay" >
+                                    <div id="texto-card-blog">
+                                        <h4 class="card-title">Rota do Vinho em São Roque
+                                        </h4>
+                                        <p class="card-text">Conhecer regiões produtoras de vinhos e uvas viníferas, bem como frequentar vinícolas é um dos hobbies mais indicados para os apaixonados por vinho e curiosos por sua história. Pensando nisso, hoje falaremos da Rota do Vinho em São Roque […]</p>
+                                        <a href="#" class="btn">veja mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-ms-12">
+                            <div class="card" >
+                                <img src="/img/noticia_2.png" alt="">
+                                <div class="card-img-overlay" >
+                                    <div id="texto-card-blog">
+                                        <h4 class="card-title">A influência da madeira no vinho
+                                        </h4>
+                                        <p class="card-text">Muito provavelmente você já escutou alguém dizendo: este vinho é muito amadeirado! Até que ponto existe influência da madeira no vinho? Vamos descobrir […] </p>
+                                        <a href="#" class="btn">veja mais</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>✧ por <a href="https://github.com/l3l3z1nh4" target="_blank">L3L3Z1nH4</a> para EBAC ✧</p>
+    </footer>
+
+    <script src="/lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
